@@ -9,6 +9,6 @@ gcloud container clusters get-credentials demo-3 --zone=us-west1-b --project=gca
 # Create Kubernetes objects
 kubectl create ns payments
 kubectl create ns signup
-kubectl create -n payments -f ${SCRIPT_DIR}/../../pyramidcorp/manifests/3_payments.yaml
-kubectl create -n signup -f ${SCRIPT_DIR}/../../pyramidcorp/manifests/3_signup.yaml
+kubectl create -n payments -f ${SCRIPT_DIR}/../../pyramidschemecorp/manifests/3_payments.yaml
+kubectl create -n signup -f ${SCRIPT_DIR}/../../pyramidschemecorp/manifests/3_signup.yaml
 echo "KUBECONFIG=${KUBECONFIG}"
